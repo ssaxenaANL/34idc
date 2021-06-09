@@ -1,0 +1,56 @@
+file "$(MCA)/mcaApp/Db/simple_mca.db"
+{
+pattern
+{P           M       DTYP           INP         PREC  CHANS}
+{35idc:med:   mca1  "asynMCA"   "@asyn(AIM2/1 0)"    3  2048}
+{35idc:med:   mca2  "asynMCA"   "@asyn(AIM2/1 1)"    3  2048}
+{35idc:med:   mca3  "asynMCA"   "@asyn(AIM2/1 2)"    3  2048}
+{35idc:med:   mca4  "asynMCA"   "@asyn(AIM2/2 0)"    3  2048}
+{35idc:med:   mca5  "asynMCA"   "@asyn(AIM2/2 1)"    3  2048}
+{35idc:med:   mca6  "asynMCA"   "@asyn(AIM2/2 2)"    3  2048}
+{35idc:med:   mca7  "asynMCA"   "@asyn(AIM3/1 0)"    3  2048}
+{35idc:med:   mca8  "asynMCA"   "@asyn(AIM3/1 1)"    3  2048}
+{35idc:med:   mca9  "asynMCA"   "@asyn(AIM3/1 2)"    3  2048}
+{35idc:med:   mca10 "asynMCA"   "@asyn(AIM3/2 0)"    3  2048}
+{35idc:med:   mca11 "asynMCA"   "@asyn(AIM3/3 1)"    3  2048}
+{35idc:med:   mca12 "asynMCA"   "@asyn(AIM3/4 2)"    3  2048}
+{35idc:med:   mca13 "asynMCA"   "@asyn(AIM3/2 3)"    3  2048}
+{35idc:med:   mca0  "Soft Channel"   ""     3  2048}
+}
+
+file "$(MCA)/mcaApp/Db/icb_amp.db"
+{
+pattern
+{P			AMP		PORT}
+{35idc:med:	amp1	"icbAmp1"}
+{35idc:med:	amp2	"icbAmp2"}
+{35idc:med:	amp3	"icbAmp3"}
+{35idc:med:	amp4	"icbAmp4"}
+{35idc:med:	amp5	"icbAmp5"}
+{35idc:med:	amp6	"icbAmp6"}
+{35idc:med:	amp7	"icbAmp7"}
+{35idc:med:	amp8	"icbAmp8"}
+{35idc:med:	amp9	"icbAmp9"}
+{35idc:med:	amp10	"icbAmp10"}
+{35idc:med:	amp11	"icbAmp11"}
+{35idc:med:	amp12	"icbAmp12"}
+{35idc:med:	amp13	"icbAmp13"}
+}
+
+
+file "$(MCA)/mcaApp/Db/icb_adc.db"
+{
+pattern
+{P			ADC		PORT}
+{35idc:med:	adc1	"icbAdc1"}
+{35idc:med:	adc2	"icbAdc2"}
+{35idc:med:	adc3	"icbAdc3"}
+{35idc:med:	adc4	"icbAdc4"}
+}
+
+file "$(MCA)/mcaApp/Db/icb_hvps.db"
+{
+pattern
+{P			HVPS	LIMIT	PORT}
+{35idc:med:	hvps1	1000	"icbHvps1"}
+}
